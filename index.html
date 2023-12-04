@@ -3,10 +3,10 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Alpha-CLIP">
+  <meta name="description" content="GPT4Point">
   <meta name="keywords" content="multimodal chatbot">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Alpha-CLIP</title>
+  <title>GPT4Point</title>
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
@@ -14,9 +14,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="static/images/icon.png">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
@@ -111,7 +109,7 @@
   
 	/* 使用渐变颜色实现彩虹字体 */
 	.rainbow-text {
-	  background: linear-gradient(to right, #3498db, #2ecc71);
+	  background: linear-gradient(to right, rgba(211, 242, 248, 1), rgba(246, 214, 214, 1));
 	  -webkit-background-clip: text;
 	  color: transparent;
 	  display: inline-block;
@@ -127,26 +125,47 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title"><img id="logo" width="5%" src="static/images/icon.png"> <span class="rainbow-text">Alpha-CLIP</span>: A CLIP Model Focusing on Wherever You Want</h1>
-          <div class="is-size-5 publication-authors"> <span class="author-block"> <a href="https://github.com/SunzeY">Zeyi Sun</a><sup>1,3</sup>,</span> <span class="author-block"> <a href="https://github.com/Aleafy">Ye Fang</a><sup>2,3</sup>,</span> <span class="author-block"> <a href="https://wutong16.github.io/">Tong Wu</a><sup>3,4</sup>, </span> <span class="author-block"> <a href="https://panzhang0212.github.io/">Pan Zhang</a><sup>3</sup>, </span> </div> <div class="is-size-5 publication-authors"> <span class="author-block"> <a href="https://yuhangzang.github.io/">Yuhang Zang</a><sup>3</sup>, </span> <span class="author-block"> <a href="https://aimerykong.github.io/">Shu Kong</a><sup>5,6</sup>, </span> <span class="author-block"> <a href="http://yjxiong.me/">Yuanjun Xiong</a><sup>7</sup>, </span> <span class="author-block"> <a href="http://dahua.site/">Dahua Lin</a><sup>3,4</sup>, </span> <span class="author-block"> <a href="https://myownskyw7.github.io/">Jiaqi Wang</a><sup>3</sup> </span> </div>
-          <div class="is-size-5 publication-authors"> <span class="author-block"><sup>1</sup>Shanghai Jiao Tong University,</span> <span class="author-block"><sup>2</sup>Fudan University,</span> <span class="author-block"><sup>3</sup>Shanghai Artificial Intelligence Lab,</span><br>
-              <span class="author-block"><sup>4</sup>The Chinese University of Hong Kong,</span> <span class="author-block"><sup>5</sup>Texas A&M University,</span> <span class="author-block"><sup>6</sup>University of Macau,</span> <span class="author-block"><sup>7</sup>Amazon AI</span> </div>
+          <h1 class="title is-1 publication-title"><img id="logo" width="5%" src="static/images/icon.png"> <span class="rainbow-text">GPT4Point</span>: A Unified Framework for Point-Language Understanding and Generation</h1>
+          <div class="is-size-5 publication-authors"> 
+            <span class="author-block"> <a href="https://github.com/Qi-Zhangyang">Zhangyang Qi </a><sup>1,&#9733</sup>, </span> 
+            <span class="author-block"> <a href="https://github.com/Aleafy">Ye Fang</a><sup>2,5,&#9733</sup>, </span> 
+            <span class="author-block"> <a href="https://github.com/SunzeY">Zeyi Sun</a><sup>3,5,&#9733</sup>, </span> 
+            <span class="author-block"> <a href="https://xywu.me">Xiaoyang Wu</a><sup>1</sup>, </span> 
+          </div> 
+    
+          <div class="is-size-5 publication-authors"> 
+            <span class="author-block"> <a href="https://wutong16.github.io/">Tong Wu</a><sup>4</sup>, </span> 
+            <span class="author-block"> <a href="https://myownskyw7.github.io/">Jiaqi Wang</a><sup>5,&#9993</sup>, </span> 
+            <span class="author-block"> <a href="http://dahua.site/">Dahua Lin</a><sup>4,5</sup>, </span> 
+            <span class="author-block"> <a href="https://hszhao.github.io/">Hengshuang Zhao</a><sup>1,&#9993 </sup> 
+          </div>
+
+          <div class="is-size-5 publication-authors"> 
+            <span class="author-block" style="font-size: smaller;"> &#9733 Equal Contribution, </span> 
+            <span class="author-block" style="font-size: smaller;"> &#9993 Correspending Authors </span> 
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>The University of Hong Kong, </span>
+            <span class="author-block"><sup>2</sup>Fudan University, </span
+            <span class="author-block"><sup>3</sup>Shanghai Jiao Tong University, </span> <br>
+            <span class="author-block"><sup>4</sup>The Chinese University of Hong Kong, </span>
+            <span class="author-block"><sup>5</sup>Shanghai Artificial Intelligence Lab,</span>
+          </div>
+
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
-              <span class="link-block"> <a href="https://arxiv.org/abs/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark"> <span class="icon"> <i class="ai ai-arxiv"></i> </span> <span>arXiv</span> </a> </span>
-              <!-- Video Link. -->
-              <span class="link-block"> <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                   class="external-link button is-normal is-rounded is-dark"> <span class="icon"> <i class="fab fa-youtube"></i> </span> <span>Video</span> </a> </span>
+              <span class="link-block"> <a href="https://arxiv.org/abs/XXX"
+                   class="external-link button is-normal is-rounded is-dark"> <span class="icon"> <i class="ai ai-arxiv"></i> </span> <span>Paper (arXiv)</span> </a> </span>
+              <!-- Demo Link. -->
+              <span class="link-block"> <a href="https://www.youtube.com/"
+                   class="external-link button is-normal is-rounded is-dark"> <span class="icon"> <i class="fa fa-gamepad"></i> </span> <span>Demo (Hugging Face) (Coming Soon)</span> </a> </span>
               <!-- Code Link. -->
-              <span class="link-block"> <a href="https://github.com/google/nerfies"
+              <span class="link-block"> <a href="https://github.com/Pointcept/PointBLIP"
                    class="external-link button is-normal is-rounded is-dark"> <span class="icon"> <i class="fab fa-github"></i> </span> <span>Code</span> </a> </span>
-              <!-- Dataset Link. -->
-              <span class="link-block"> <a href="https://github.com/google/nerfies/releases/tag/0.1"
-                   class="external-link button is-normal is-rounded is-dark"> <span class="icon"> <i class="far fa-images"></i> </span> <span>Dataset</span></a></span></div>
-          	 </div>
-       	   </div>
+          	</div>
+       	  </div>
         </div>
   </div>
 
@@ -165,7 +184,7 @@
 		  <style>
 			/* 使用渐变颜色实现彩虹字体 */
 			.rainbow-text {
-			  background: linear-gradient(to right, #3498db, #2ecc71);
+			  background: linear-gradient(to right, rgb(27, 201, 236), rgb(137, 23, 231));
 			  -webkit-background-clip: text;
 			  color: transparent;
 			  display: inline-block;
@@ -173,27 +192,14 @@
 			}
 		  </style>
           <p>
-            Contrastive Language-Image Pre-training (CLIP) plays an essential role in extracting valuable content information from images across diverse tasks. It aligns textual and visual modalities to comprehend the entire image, including all the details, even those irrelevant to specific tasks. However, for a finer understanding and controlled editing of images, it becomes crucial to focus on specific regions of interest, which can be indicated as points, masks, or boxes by humans or perception models.
-          </p>
-          <p>
-            To fulfill the requirements, we introduce <span class="rainbow-text">Alpha-CLIP</span>, an enhanced version of CLIP with <b>an auxiliary alpha channel</b> to suggest attentive regions and fine-tuned with constructed <b> millions of RGBA region-text</b> pairs. Alpha-CLIP not only preserves the visual recognition ability of CLIP but also enables precise control over the emphasis of image contents. It demonstrates effectiveness in various tasks, including but not limited to <b>open-world recognition</b>, <b>multimodal large language models</b>, and <b>conditional 2D / 3D generation</b>. It has a strong potential to serve as a versatile tool for image-related tasks. All the code, models, and training data will be publicly available.
+            Multimodal Large Language Models (MLLMs) have excelled in 2D image-text comprehension and image generation, but their understanding of the 3D world is notably deficient, limiting progress in 3D language understanding and generation. To solve this problem, we introduce GPT4Point, an innovative groundbreaking point-language multimodal model designed specifically for <b>unified 3D object understanding and generation within the MLLM framework</b>. <span class="rainbow-text">GPT4Point</span> as a powerful 3D MLLM seamlessly can execute a variety of point-text reference tasks such as point-cloud captioning and Q&A. 
+            Additionally, GPT4Point is equipped with advanced capabilities for controllable 3D generation, it can get high-quality results through a low-quality point-text feature maintaining the geometric shapes and colors. To support the expansive needs of 3D object-text pairs, we develop <b>Pyramid-XL, a point-language dataset annotation engine</b>. It constructs a large-scale database over 1M objects of varied text granularity levels from the Objaverse-XL dataset, essential for training GPT4Point. <b>A comprehensive benchmark</b> has been proposed to evaluate 3D point-language understanding capabilities. 
+            In extensive evaluations, GPT4Point has demonstrated superior performance in understanding and generation.
           </p>
         </div>
       </div>
     </div>
     <!--/ Abstract. -->
-
-    <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-six-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-    <!--/ Paper video. -->
   </div>
 
 <section class="section"  style="background-color:#efeff081" id="Highlight">
@@ -204,11 +210,16 @@
             <div class="content has-text-justified">
               <p style="font-size: 15px;">
                 <ul>
-				  <li><b>Alpha-CLIP in Image Recognition.</b> 
-Focusing on a specified ground-truth region leads to a 4.1% increase in top-1 accuracy for the zero-shot ImageNet classification task. This <span style="color: #997300;">enhanced region-based recognition </span>is valuable for tasks like Referring Expression Comprehension(REC) and serves as data engine for Open Vocabulary Detection(OVD).</li>
-				  <li><b>Serving as vision backbone in MLLM.</b> In conjunction with a large language model, Alpha-CLIP becomes capable of facilitating <span style="color: #997300;"> region level captioning and VQA</span> within a MLLM framework(e.g. BLIP-2, LLaVA). This integration significantly mitigates the occurrences of hallucinations and diminishes model bias, while also empowers region-focused new tasks. </li>
-				  <li><b>Alpha-CLIP in 2D generation.</b> When integrated with a diffusion model, Alpha-CLIP enhances the controllability of BLIP-Diffusion in image variation tasks. In addition, it enables the extraction of subjects from <span style="color: #997300;"> complex images for subject-driven generation</span>, surmounting an obstacle encountered when deploying BLIP-Diffusion with the original CLIP, which only supports single subjects in simplistic images. </li>
-				  <li><b>Alpha-CLIP in 3D generation.</b> In addition to the capabilities in 2D generation, Alpha-CLIP exhibits proficiency in 3D generation as well. It can be effectively deployed in conjunction with a diffusion model, such as Point-E, to <span style="color: #997300;"> enhance the quality of 3D object generation</span>. Additionally, it can be utilized with NeRF, exemplified by PureCLIPNeRF, to optimize the creation of superior 3D objects. </li>
+				  <li><b>Unified Framework for Point-language Understanding and Generation.</b> 
+            We present the unified framework for point-language understanding and generation GPT4Point, including the 3D MLLM for point-text tasks and <span style="color: rgb(137, 23, 231);">controlled 3D generation</span>.
+          </li>
+				  <li><b>Automated Point-language Dataset Annotation Engine Pyramid-XL.</b> 
+            We introduce the automated point-language dataset annotation engine <span style="color: rgb(137, 23, 231);"> Pyramid-XL</span> based on Objaverse-XL, currently encompassing 1M pairs of varying levels of coarseness and can be extended cost-effectively.
+          </li>
+				  <li><b>Object-level Point Cloud Benchmark.</b> 
+            Establishing a novel object-level point cloud benchmark with comprehensive evaluation metrics for 3D point cloud language tasks. 
+            This benchmark thoroughly assesses models' understanding capabilities and facilitates the evaluation of generated 3D objects.
+          </li>
 				</ul>
               </p>
             </div>
@@ -217,10 +228,10 @@ Focusing on a specified ground-truth region leads to a 4.1% increase in top-1 ac
       </div>
 </section><br>
 
-<section class="section" id="Alpha-CLIP usage">
+<section class="section" id="GPT4Point Usage">
       <div class="columns is-centered has-text-centered">
         <div class="column is-six-fifths">
-          <h2 class="title is-3"> Alpha-CLIP Usage</h2>
+          <h2 class="title is-3"> GPT4Point-Usage</h2>
         </div>
       </div>
       <div class="container is-max-desktop">
@@ -228,15 +239,13 @@ Focusing on a specified ground-truth region leads to a 4.1% increase in top-1 ac
           <div class="column is-full-width">
             <div class="content has-text-justified">
               <p>
-                Alpha-CLIP can enhance CLIP across a wide array of downstream tasks, applying a <b>plug-and-play</b> methodology that permeates diverse domains, spanning from <b>perception to generation</b> in <b>2D and 3D applications</b>. We show downstream tasks of Alpha-CLIP and their advantages over the original CLIP in the following figure and table.
+                <b>Task examples of GPT4Point.</b> It performs accurate 3D recognition, detailed captioning, precise Q&A, and high-quality controllable 3D generation. Additionally, GPT4Point excels in 3D anomalous object description, accurately assessing abnormal shapes like the multi-face object and the 3D generation failure case. 
+                It is a crucial ability in the assessment of generated 3D objects. 
 				<centering>
                   <div style="text-align: center;">
-                    <img id="teaser" width="100%" src="static/images/teaser.png">     
+                    <img id="teaser" width="100%" src="static/images/fig1_teaser.png">     
                   </div><br>
                 <centering>
-                  <div style="text-align: center;">
-                    <img id="teaser" width="100%" src="static/images/usage_table1.png">     
-                  </div> 
               </p>
             </div>
             </b></font>
@@ -245,10 +254,10 @@ Focusing on a specified ground-truth region leads to a 4.1% increase in top-1 ac
       </div>
     </section>
 
-<section class="section" id="Alpha-CLIP pipeline">
+<section class="section" id="GPT4Point pipeline">
       <div class="columns is-centered has-text-centered">
         <div class="column is-six-fifths">
-          <h2 class="title is-3"> Alpha-CLIP Pipeline</h2>
+          <h2 class="title is-3"> GPT4Point Pipeline</h2>
         </div>
       </div>
       <div class="container is-max-desktop">
@@ -256,118 +265,11 @@ Focusing on a specified ground-truth region leads to a 4.1% increase in top-1 ac
           <div class="column is-full-width">
             <div class="content has-text-justified">
               <p>
-                The pipeline of our <b>data generation method</b> and <b>model architecture</b>. (a) Our method generates millions of RGBA region-text pairs. (b) Alpha-CLIP modifies the CLIP image encoder to take an additional alpha channel along with RGB. We first generate millions of RGBA region-text data from grounding and classification datasets. Using our generated data, we then train our Alpha-CLIP with additional Alpha-channel inputs.
+                <b>The model architecture of GPT4Point for training.</b> In Stage1, we employ a Bert-based Point-Q-Former for point-text feature alignment through three point-text tasks. Then, in Stage2, an LLM is appended to train the model's text inference capabilities. 
+                A Point Cloud Diffusion is attached separately to train controlled text-to-3D generation which keeps the geometry shape and colors.
                 <centering>
                   <div style="text-align: center;">
-                    <img id="teaser" width="100%" src="static/images/pipeline.png">     
-                  </div>
-              </p>
-            </div>
-            </b></font>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-<section class="section" id="Alpha-CLIP">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-six-fifths">
-          <h2 class="title is-3"> Alpha-CLIP in MLLM</h2>
-        </div>
-      </div>
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column is-full-width">
-            <div class="content has-text-justified">
-              <p>
-                We replace CLIP used in BLIP-2 and LLaVA-1.5 with our Alpha-CLIP to make MLLM directly focus on <b>user-defined region</b> in vision-language tasks such as <b>region level captioning</b> and <b>VQA</b>. All cases shown here are made simply by replacing the original CLIP of BLIP2 or LLaVA-1.5 with a <b>plug-in</b> Alpha-CLIP without further tuning.
-                <centering>
-                  <div style="text-align: center;">
-                    <img id="mllm" width="100%" src="static/images/mllm_more1.png">     
-                  </div>
-              </p>
-            </div> <br>
-			<!--      results-->
-			<p>Besides qualitative results, we also provide quantitative region captioning results of Alpha-CLIP with LLaVA-1.5 on Visual Genome and RefCOCOg.</p>
-			<div style="text-align: center;">
-				<table border="1" cellspacing="0" style="width: 92%; border-collapse: collapse; text-align: center; margin: 0 auto;">
-					<caption><strong>Performance of Alpha-CLIP in Region-Level Captioning</strong>: We report METEOR and CIDEr metrics on Visual Genome and refCOCOg Datasets, demonstrating competitive outcomes.</caption>
-					<thead>
-						<tr>
-							<th rowspan="2">Model</th>
-							<th colspan="2">refCOCOg</th>
-							<th colspan="2">Visual Genome</th>
-						</tr>
-						<tr>
-							<th>METEOR</th>
-							<th>CIDEr</th>
-							<th>METEOR</th>
-							<th>CIDEr</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>GRIT</td>
-							<td>15.2</td>
-							<td>71.6</td>
-							<td>17.1</td>
-							<td>142</td>
-						</tr>
-						<tr>
-							<td>Kosmos-2</td>
-							<td>14.1</td>
-							<td>62.3</td>
-							<td>-</td>
-							<td>-</td>
-						</tr>
-						<tr>
-							<td>GPT4RoI</td>
-							<td>-</td>
-							<td>-</td>
-							<td>17.4</td>
-							<td>145.2</td>
-						</tr>
-						<tr>
-							<td>GLaMM</td>
-							<td>16.2</td>
-							<td>105.0</td>
-							<td>18.6</td>
-							<td>157.8</td>
-						</tr>
-						<tr style="background-color: #e6e6ff;">
-							<td>Alpha-CLIP+LLaVA</td>
-							<th>16.7</th>
-							<th>109.2</th>
-							<th>18.9</th>
-							<th>160.3</th>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-            </b></font>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-<section class="section" id="Alpha-CLIP">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-six-fifths">
-          <h2 class="title is-3"> Alpha-CLIP in Image Variation</h2>
-        </div>
-      </div>
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column is-full-width">
-            <div class="content has-text-justified">
-              <p>
-                Alpha-CLIP can be used in most image variation models that use CLIP image encoder. For example, BLIP-Diffusion bridges CLIP and stable-diffusion with Q-former to generate and edit 2D images controlled by text. By introducing Alpha-CLIP, we can add an additional set of vision prompts to allow the model to focus on <b>specified regions for 2D generation</b>, enabling <b>subject-driven generation in complex images</b>. The first row per three is the original BLIP-Diffusion generated
-images. Other rows represent the outcomes of Alpha-CLIP with highlighted regions marked in red.
-                <centering>
-                  <div style="text-align: center;">
-                    <img id="teaser" width="100%" src="static/images/append_more_diff.png">     
+                    <img id="teaser" width="100%" src="static/images/fig2_architechure.png">     
                   </div>
               </p>
             </div>
@@ -377,79 +279,11 @@ images. Other rows represent the outcomes of Alpha-CLIP with highlighted regions
       </div>
     </section>
 
-<section class="section" id="Alpha-CLIP in 3D">
+
+<section class="section" id="Pyramid-XL: An automated point-text annotation engine">
       <div class="columns is-centered has-text-centered">
         <div class="column is-six-fifths">
-          <h2 class="title is-3"> Alpha-CLIP in 3D Object Generation</h2>
-        </div>
-      </div>
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column is-full-width">
-			<div class="content has-text-justified">
-			  <p><h2 class="title is-5">Alpha-CLIP in Point-E</h2> We demonstrate that Alpha-CLIP is helpful in two cases: 
-			  <ol>
-				<li>When Point-E generates the point cloud with some parts missing, users can highlight the missing part in the condition image to remind the diffusion model to pay more attention to that part and <b>fix this missing parts problem</b>.</li>
-				<li>Users can <b>highlight the part that needs to be emphasized</b> on the 2D image.</li>
-			  </ol>
-				<div style="text-align: center;">
-				<img src="static/gifs/pointe.gif" alt="First GIF" width="800" height="800">
-				</div>
-              <p><br><h2 class="title is-5">Alpha-CLIP in PureCLIPNeRF</h2> We replace CLIP model with Alpha-CLIP in PureCLIPNeRF to generate 3D objects, and tests are conducted with and without background augmentation. As shown in the following figure, with Alpha-CLIP, PureCLIPNeRF generates objects that <b>closely align with the provided textual prompts</b>(especially bolded text) in terms of shape and color. Furthermore, there is an enhancement in the <b>overall coherence of the generated objects</b>, coupled with notable <b>aesthetic qualities</b>. </p> </div>
-            </b></font>
-			<div style="text-align: center;">
-			<img src="static/gifs/fountain0.gif" alt="First GIF" width="250" height="250">
-			<img src="static/gifs/fountain2.gif" alt="First GIF" width="250" height="250">
-			<img src="static/gifs/fountain3.gif" alt="First GIF" width="250" height="250">
-			<img src="static/gifs/fountain1.gif" alt="First GIF" width="250" height="250">
-			<p>A <b>beautifully</b> carved <b>square</b> fountain with an <b>ornate statue</b> standing in the <b>center</b>.</p>
-			<div style="text-align: center;">
-			<img src="static/gifs/candle2.gif" alt="First GIF" width="250" height="250">
-			<img src="static/gifs/candle0.gif" alt="First GIF" width="250" height="250">
-			<img src="static/gifs/candle3.gif" alt="First GIF" width="250" height="250">
-			<img src="static/gifs/candle1.gif" alt="First GIF" width="250" height="250">
-			<p>A <b>silver candlestick</b> with <b>several</b> burning candles.</p>
-			<div style="text-align: center;">
-			<img src="static/gifs/hat3.gif" alt="First GIF" width="250" height="250">
-			<img src="static/gifs/hat1.gif" alt="First GIF" width="250" height="250">
-			<img src="static/gifs/hat2.gif" alt="First GIF" width="250" height="250">
-			<img src="static/gifs/hat0.gif" alt="First GIF" width="250" height="250">
-			<p>A unique <b>officer hat</b>, black with <b>gold trim</b>, adds a sense of authority.</p>
-			<div style="text-align: center;">
-			<img src="static/gifs/tokyo2.gif" alt="First GIF" width="250" height="250">
-			<img src="static/gifs/tokyo0.gif" alt="First GIF" width="250" height="250">
-			<img src="static/gifs/tokyo3.gif" alt="First GIF" width="250" height="250">
-			<img src="static/gifs/tokyo1.gif" alt="First GIF" width="250" height="250">
-			<p><b>Tokyo city</b>; trending on artstation.</p>
-			</div>
-			<centering>
-			  <div style="text-align: center;">
-				<img id="teaser" width="80%" src="static/images/pureclip.png">     
-			  </div>
-				<!-- Video
-               <video id="pureclip" autoplay muted loop playsinline height="60%">
-				<source src="./static/videos/pureclip2.mp4"
-						type="video/mp4">
-			  </video>
-			  -->
-				<!--Image
-				<centering>
-                  <div style="text-align: center;">
-                    <img id="teaser" width="100%" src="static/images/3d_append_pureclip.png">     
-                  </div>
-				 -->
-              
-            
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-<section class="section" id="Alpha-CLIP">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-six-fifths">
-          <h2 class="title is-3"> Alpha-CLIP in Image Recognition</h2>
+          <h2 class="title is-3"> Pyramid-XL: An automated point-text annotation engine</h2>
         </div>
       </div>
       <div class="container is-max-desktop">
@@ -457,13 +291,41 @@ images. Other rows represent the outcomes of Alpha-CLIP with highlighted regions
           <div class="column is-full-width">
             <div class="content has-text-justified">
               <p>
-			  这里换成表格，or可以加一个cls测试pipeline； 以及rec任务 
-			  <br>
-                We delineate the process of utilizing the seed captions to train a general captioner (Share-Captioner)
-                and then employing this captioner to generate <b>1.2M high-quality captions</b> for pre-training usage.
+                <b>Pyramid-XL: An automated point-text annotation engine.</b> Directly inputting images into VLMs yields unsatisfactory results.
+                We propose a progressive annotation approach with 3 levels of granularity, leveraging results from the previous level for precise outcomes.
                 <centering>
                   <div style="text-align: center;">
-                    <img id="teaser" width="100%" src="static/images/pipeline.png">     
+                    <img id="teaser" width="100%" src="static/images/fig3_dataset_engine.png">     
+                  </div>
+              </p>
+            </div>
+            </b></font>
+          </div>
+        </div>
+      </div>
+    </section> 
+
+
+    <section class="section" id="GPT4Point-Long Caption and Question & Answering">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-six-fifths">
+          <h2 class="title is-3"> GPT4Point: Long Caption and Question & Answering</h2>
+        </div>
+      </div>
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-full-width">
+            <div class="content has-text-justified">
+              <p>
+                <b>Examples of text inference using the GPT4Point with ViT-g and OPT6.7B after Instruct Finetuning.</b> The table showcases
+                its proficiency with point cloud input, excelling in tasks like detailed caption generation and point cloud-bas question answering. This
+                underscores our model's profound grasp of point cloud geometry and color, translating them into meaningful semantics.
+                <centering>
+                  <div style="text-align: center;">
+                    <img id="teaser" width="100%" src="static/images/fig4_qa_demo.png">     
+                  </div>
+                  <div style="text-align: center;">
+                    <img id="teaser" width="100%" src="static/images/sup_fig10_qa_demo.png">     
                   </div>
               </p>
             </div>
@@ -473,10 +335,11 @@ images. Other rows represent the outcomes of Alpha-CLIP with highlighted regions
       </div>
     </section>
 
-<section class="section" id="Alpha-CLIP Attn">
+
+<section class="section" id="GPT4Point: Detect Anomalous">
       <div class="columns is-centered has-text-centered">
         <div class="column is-six-fifths">
-          <h2 class="title is-3"> Alpha-CLIP Attention Map Visualization</h2>
+          <h2 class="title is-3">GPT4Point: Detect Anomalous Objects(Generation Failure Cases)</h2>
         </div>
       </div>
       <div class="container is-max-desktop">
@@ -484,12 +347,12 @@ images. Other rows represent the outcomes of Alpha-CLIP with highlighted regions
           <div class="column is-full-width">
             <div class="content has-text-justified">
               <p>
-			  	We check the attention map of [CLS] token in the last transformer block in the vision encoder.
-Each first line per four is from original CLIP and the other three lines are from Alpha-CLIP with user-defined focus regions marked
-in red. This visualization verifies that Alpha-CLIP <b>pays more attention to the area to focus on</b> and more importantly, with <b>no damage to the 2D location information</b> preserved in the feature location of the original CLIP.
+                <b>Anomalous Objects: Generation Failure Cases.</b> The upper and lower parts respectively depict the performance of 2D
+                MLLM and GPT4Point in identifying abnormally generated objects with multi-body and multi-head structures. GPT4Point is effective in
+                making accurate judgments, whereas 2D MLLM, due to the lack of information from single-view images, fails to identify most cases.
                 <centering>
                   <div style="text-align: center;">
-                    <img id="teaser" width="100%" src="static/images/attn.png">     
+                    <img id="teaser" width="100%" src="static/images/sup_fig9_qa_special.png">     
                   </div>
               </p>
             </div>
@@ -499,15 +362,64 @@ in red. This visualization verifies that Alpha-CLIP <b>pays more attention to th
       </div>
     </section>
 
+    <section class="section" id="GPT4Point: Point Diffusion Results">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-six-fifths">
+          <h2 class="title is-3">GPT4Point: Point Diffusion Results</h2>
+        </div>
+      </div>
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-full-width">
+            <div class="content has-text-justified">
+              <p>
+                <b>Point Diffusion Results: our controllable text-to-3D.</b> Given a low-quality point cloud prior, it can generate outcomes
+                  superior to direct text-to-3D and image-to-3D methods and more closely align with the low-quality priors, demonstrating controllability.
+                <centering>
+                  <div style="text-align: center;">
+                    <img id="teaser" width="100%" src="static/images/sup_fig5_point_diffusion_results.png">     
+                  </div>
+              </p>
+            </div>
+            </b></font>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="Pyramid-XL Level 3 Point-E Finetune Results">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-six-fifths">
+          <h2 class="title is-3">Pyramid-XL Level 3 Point-E Finetune Results.</h2>
+        </div>
+      </div>
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-full-width">
+            <div class="content has-text-justified">
+              <p>
+                <b>Pyramid-XL Level 3 Point-E Finetune Results.</b> We found that the results of fine-tuning with dense captions from our
+                Pyramid-XL significantly outperform those fine-tuned with Cap3D captions, demonstrating the greater accuracy of our generated captions.                
+                <centering>
+                  <div style="text-align: center;">
+                    <img id="teaser" width="100%" src="static/images/sup_fig11_dataset_pointe_ft_results.png">     
+                  </div>
+              </p>
+            </div>
+            </b></font>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
 <section class="section" id="BibTeX">
       <div class="container is-max-desktop content">
         <h2 class="title">BibTeX</h2>
         <pre><code>
-          @misc{sun2023alphaclip,
-            title={Alpha-CLIP: A CLIP Model Focusing on Wherever You Want}, 
-            author={Zeyi Sun and Ye Fang and Tong Wu and Pan Zhang and Yuhang Zang and Shu Kong and Yuanjun Xiong and Dahua Lin and Jiaqi Wang},
+          @misc{qi2023gpt4point,
+            title={GPT4Point: A Unified Framework for Point-Language}, 
+            author={Zhangyang Qi, Ye Fang, Zeyi Sun, Xiaoyang Wu, Tong Wu, Jiaqi Wang, Dahua Lin, Hengshuang Zhao},
             year={2023},
             eprint={?},
             archivePrefix={arXiv},
@@ -519,15 +431,6 @@ in red. This visualization verifies that Alpha-CLIP <b>pays more attention to th
 
 <footer class="footer">
   <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-         href="https://arxiv.org/pdf/2210.04150.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/facebookresearch/ov-seg" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
